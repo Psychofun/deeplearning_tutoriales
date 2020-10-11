@@ -4,9 +4,9 @@
 ---
 
 ## Regresión logística con Numpy
+[Código](./regresion_logistica)
 
 ### Checha el vídeo en Youtube  
-
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=DePDOzNECZU
 " target="_blank"><img src="https://img.youtube.com/vi/DePDOzNECZU/mqdefault.jpg" 

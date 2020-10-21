@@ -41,7 +41,7 @@ def costo(y_hat, y):
     """
     m = y.shape[0]
 
-    J  = -(1.0/m) *(y.T@np.log(y_hat)) + (1-y.T)@np.log(1-y_hat)
+    J  = -(1.0/m) *((y.T@np.log(y_hat)) + (1-y.T)@np.log(1-y_hat))
 
     return J 
 
@@ -72,7 +72,7 @@ def descenso_gradiente(X,y, theta, alpha, iteraciones):
         J = costo(y_hat, y)
 
         # Descenso por el gradiente
-        theta  = theta -alpha* (1/m)*X.T@(y_hat-y)
+        theta  = theta -alpha* (1.0/m)*X.T@(y_hat-y)
     
 
     return J, theta
